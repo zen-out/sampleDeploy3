@@ -1,0 +1,70 @@
+.instructions_section {
+  min-height: 100vh;
+  display: flex;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.instructionsCard-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.instructionsCard {
+  max-width: 30ch;
+  background: #fff;
+  line-height: 22px;
+  padding: 1rem 1rem;
+  border-radius: 3px;
+  transition: transform 0.4s ease;
+}
+.instructionsCard:hover {
+  transform: translateY(-7px);
+  -webkit-box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.26);
+  box-shadow: 1px 4px 15px 2px rgba(0, 0, 0, 0.26);
+}
+.instructionsCard-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.instructionsCard-top i.fas {
+  font-size: 7ch;
+  color: blue;
+}
+.instructionsCard-top span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.instructionsCard-title {
+  font-size: 1rem;
+  color: hsl(214, 18%, 23%);
+  line-height: 22px;
+  margin-bottom: 1rem;
+}
+.instructionsCard-body {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.instructionsCard-action {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: blue;
+}
+.instructionsCard .btn-link {
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.instructionsCard:hover .btn-link:hover {
+  text-decoration: underline;
+}
+.instructionsCard .instructionsCard-action .fas {
+  transition: 0.2s ease-in-out;
+}
+.instructionsCard:hover .instructionsCard-action .fas {
+  transform: translateX(10px);
+}
